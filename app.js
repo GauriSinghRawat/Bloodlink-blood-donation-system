@@ -8,7 +8,7 @@ const dotenv = require("dotenv");
 
 dotenv.config();
 const Donor = require("./models/donor");
-mongoose.connect(process.env.MONGODB_URI);
+
 console.log("MongoDB URI loaded:", !!process.env.MONGODB_URI);
 const app = express();
 
